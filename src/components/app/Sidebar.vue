@@ -1,5 +1,5 @@
 <template>
-  <ul class="sidenav app-sidenav open">
+  <ul class="sidenav app-sidenav" :class="{open: value}">
     <router-link
       v-for="link in links"
       :key="link.url"
@@ -16,6 +16,7 @@
 <script>
   export default {
     name: 'Sidebar',
+    props: ['value'],
     data: () => ({
       links:[
         {title: 'Счет', url: '/', exact:true},
