@@ -14,6 +14,7 @@
             class="dropdown-trigger black-text"
             data-target="dropdown"
             href="#"
+            ref="dropdown"
           >
             USER NAME
             <i class="material-icons right">arrow_drop_down</i>
@@ -38,3 +39,13 @@
   </nav>
 </template>
 
+<script>
+  export default {
+    mounted () {
+      
+      M.Dropdown.init(this.$refs.dropdown,{
+        constrainWidth: true
+      })
+    }
+  }
+</script>
