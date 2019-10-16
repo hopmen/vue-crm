@@ -25,6 +25,6 @@
 
 <style lang="scss">
   @import '~materialize-css/dist/css/materialize.min.css';
+  @import '~material-icons/iconfont/material-icons.css';
   @import 'assets/index.css';
-  @import '~material-icons/css/material-icons';
 </style>
